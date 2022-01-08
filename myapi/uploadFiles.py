@@ -21,7 +21,7 @@ print("Step 2 Status Code: ", r2.status_code, "Post URL: ", url2)
 print(r2.json())
 print()
 
-Activation and Retrieval
+# Activation and Retrieval
 url3 = r2.json()['location']
 r3 = requests.get(url3, headers={"authorization": "Bearer ygCxdvuMbLXDtgiCpEdqLrRRZ02kASevZHl9vddtJPtBDS7MGs8WvT5wlPcapUcB"})
 r3.raise_for_status()
