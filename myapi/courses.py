@@ -1,3 +1,4 @@
+from xml.etree.ElementInclude import include
 import requests
 import json
 
@@ -10,12 +11,12 @@ import json
 # print(r.json)
 
 # Get a particular Course
-url2 = "https://hulms.instructure.com/api/v1/courses/1923"
+url2 = "https://hulms.instructure.com/api/v1/courses/1921"
 headers ={"Authorization":"Bearer ygCxdvuMbLXDtgiCpEdqLrRRZ02kASevZHl9vddtJPtBDS7MGs8WvT5wlPcapUcB"}
-r =requests.get(url2, headers=headers)
-print(r.status_code)
-print(r.text)
-print(r.json)
+r =requests.get(url2, headers=headers, params={"include":"syllabus_body"})
+print(json.loads(r.text)["syllabus_body"])
+
+
 
 # Update a particular Course (Not working for some reason)
 # url4 = "https://hulms.instructure.com/api/v1/courses/1923?"
