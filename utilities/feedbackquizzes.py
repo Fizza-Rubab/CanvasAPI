@@ -40,4 +40,5 @@ for w in range(1, total_weeks+1):
         "question_type":i.__dict__["question_type"],"question_text":i.__dict__["question_text"],
         "points_possible":i.__dict__["points_possible"]}
         print(newquiz.create_question(question=d))
-    sleep(2)
+        sleep(1)
+    sleep(1.5)
