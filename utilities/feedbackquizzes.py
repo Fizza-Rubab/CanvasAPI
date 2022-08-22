@@ -15,7 +15,7 @@ quiz_id = 6078
 # Fetch the quiz
 q = course.get_quiz(quiz_id)
 
-total_weeks = 4
+total_weeks = 14
 
 for w in range(1, total_weeks+1):
 
