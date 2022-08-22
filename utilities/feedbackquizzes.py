@@ -2,7 +2,7 @@ from time import sleep
 from canvasapi import *
 
 API_URL ="https://hulms.instructure.com"
-API_KEY = "17361~0yOJPT02iOLJ5ZUoVvSRhYvdf7AAJ4kv4ET95osteKVuf8Jxbynvq0bgFGn37UST"
+API_KEY = ""
 canvas = Canvas(API_URL, API_KEY)
 
 # Set the course
